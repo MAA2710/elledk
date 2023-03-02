@@ -1,0 +1,141 @@
+/************Gælder for alt**************/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /*laver en fast størgelse hvor padding og margin er regnet med*/
+}
+
+/***********Header***********/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    top: 0px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #a60405;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+
+#logo{
+    display: flex;
+    height: 50px;
+    margin-right: 100px;
+}
+
+
+/*************nav************/
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    /* background-color: blue; */
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+}
+/*--------------Abonner knap------------*/
+nav #abonner{
+    font-size: 15px;
+    background-color: rgb(0, 0, 0);
+    font-weight: 400; /*Hvor tyk skriften er*/
+    padding: 10px 24px; /*Y=16px X=24px*/
+    color: white;
+    text-decoration: none;       
+}
+
+/*--------------Pil/Dropdow nmenu------------*/
+#pil{
+    display: flex;
+    height: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    height: 1000px;
+  }
+
+
+  main{
+    background-color: green;
+    height: 1000px;
+  }
+  main .billede{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 260px;
+    background-image: url(billeder/baugrund.png);
+    background-size: cover;
+    height: 1000px;
+  }
+
+    main .billede .text{
+    margin-top: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+h1{
+    font-size: 20px;
+    border-bottom: 2px solid #a60405;
+    position: relative;
+
+    /* text-shadow: 2px 4px 6px rgba(0,0,0,0.4); */
+}
+
+/* .linje{
+    width: 70px;
+    position: relative;
+    border-bottom: 2px solid #0004ff;
+} */
+
+h2{
+    display: flex;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    /* text-shadow: 2px 4px 6px rgba(0,0,0,0.4); */
+}
+
+h3{
+    font-size: 10px;
+    margin-top: 20px;
+    /* text-shadow: 2px 4px 6px rgba(0,0,0,0.4); */
+}
+
+
+  footer{
+    height: 300px;
+    background-color: grey;
+  }
